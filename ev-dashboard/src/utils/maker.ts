@@ -98,3 +98,10 @@ export const getTopFiveState = async () => {
 
   return top5States;
 };
+
+//Fetch Full Details
+export const getFullData = async () => {
+  const data = Data as VehicleRecord[];
+
+  return data;
+};

@@ -19,8 +19,6 @@ const TopFiveCountyChart = ({ topFiveCounty }: TopFiveCountyProps) => {
     count: data.count,
   }));
 
-  console.log(formattedData);
-
   return (
     <div className="h-full w-full rounded-xl bg-white p-4 shadow-md">
       {/* Title */}

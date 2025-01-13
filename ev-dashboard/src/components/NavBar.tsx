@@ -14,6 +14,8 @@ import { LuDatabase } from 'react-icons/lu';
 import Link from 'next/link';
 import { IoCarSportOutline } from 'react-icons/io5';
 import { usePathname } from 'next/navigation';
+import Image from 'next/image';
+import AvatarImage from '@/../../public/profile.jpg';
 
 const NavBar = () => {
   const pathName = usePathname();
@@ -31,11 +33,25 @@ const NavBar = () => {
           className="w-full px-4 py-0.5 outline-none"
         />
       </label>
+      <div className="hidden md:block">
+        <div className="flex items-center justify-center gap-2">
+          <div className="flex flex-col">
+            <span className="text-right font-semibold">Jhon</span>
+            <span className="text-sm font-semibold text-icon">
+              JohnWick@gmail.com
+            </span>
+          </div>
+          <Image
+            width={50}
+            height={50}
+            className="rounded-full object-cover"
+            alt="Profile"
+            src={AvatarImage}
+          />
+        </div>
+      </div>
 
-      <button className="hidden rounded-full bg-secondary px-6 py-2 text-primary md:block">
-        Hello
-      </button>
-
+      {/* Mobile nav */}
       <Sheet>
         <SheetTrigger asChild className="block hover:cursor-pointer md:hidden">
           <RxHamburgerMenu size={22} className="text-icon" />

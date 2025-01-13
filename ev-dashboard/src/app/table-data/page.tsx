@@ -1,5 +1,6 @@
 'use server';
 
+import TableData from '@/components/TableData';
 import React from 'react';
 
 const TableDataPage = async () => {
@@ -8,7 +9,7 @@ const TableDataPage = async () => {
       <h1 className="text-2xl font-bold text-secondary">Date Set</h1>
 
       <div className="mt-4 h-[90%] rounded-md border shadow-lg">
-        Table content
+        <TableData />
       </div>
     </div>
   );

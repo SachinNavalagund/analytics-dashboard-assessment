@@ -31,7 +31,6 @@ const TriangleBar = (props: any) => {
 };
 
 const TopFiveModelChart = ({ topFiveModels }: TopFiveModelsProps) => {
-  console.log(topFiveModels);
   const data = topFiveModels.map((value) => ({
     name: value.name,
     count: value.count,

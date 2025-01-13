@@ -11,6 +11,30 @@
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: 0; /* Firefox */
   }
+
+  .scroll-thin::-webkit-scrollbar {
+    height: 2px; /* Horizontal scrollbar height */
+    width: 2px; /* Vertical scrollbar width */
+  }
+
+  .scroll-thin::-webkit-scrollbar-thumb {
+    background: #ccc; /* Thumb color */
+    border-radius: 10px; /* Rounded corners for the thumb */
+  }
+
+  .scroll-thin::-webkit-scrollbar-thumb:hover {
+    background: #aaa; /* Darker thumb on hover */
+  }
+
+  .scroll-thin::-webkit-scrollbar-track {
+    background: #f3f3f3; /* Track color */
+  }
+
+  /* Scrollbar for Firefox */
+  .scroll-thin {
+    scrollbar-width: thin; /* Makes scrollbar thinner */
+    scrollbar-color: #ccc #f3f3f3; /* Thumb color | Track color */
+  }
 }
 
 @layer base {

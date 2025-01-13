@@ -7,8 +7,6 @@ interface TopFiveStateProps {
 }
 
 const TopFiveState = ({ topFiveState }: TopFiveStateProps) => {
-  console.log(topFiveState);
-
   const data = topFiveState.map((value) => ({
     name: value.name,
     count: value.count,
