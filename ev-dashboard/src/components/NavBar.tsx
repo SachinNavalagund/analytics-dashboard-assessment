@@ -19,7 +19,7 @@ const NavBar = () => {
   const pathName = usePathname();
 
   return (
-    <div className="mx-2 flex h-[80px] items-center justify-between border-b lg:mx-4 lg:pl-4">
+    <div className="mx-2 flex h-[100px] items-center justify-between border-b py-3 lg:mx-4 lg:pl-4">
       <label
         htmlFor=""
         className="flex w-[60%] items-center gap-2 rounded-full border bg-white p-2 pl-4 shadow-md lg:w-[40%] lg:pl-6"
